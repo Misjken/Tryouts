@@ -1,0 +1,15 @@
+---
+layout: default
+title: Products
+---
+<h1>HIer vind je al onze producten</h1>
+
+<div class="list">
+    {% for item in site.data.products %}
+    <div class="product">
+        <a href="{{ item.link }}">
+            <h2>{{ item.name }}</h2>
+        </a>
+    </div>
+    {% endfor %}
+</div>
